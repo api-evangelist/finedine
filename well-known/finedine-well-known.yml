@@ -1,0 +1,35 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://finedinemenu.com/.well-known/*
+host: https://finedinemenu.com
+note: >-
+  The host returns HTTP 200 for every /.well-known/ path but serves the marketing
+  site's catch-all HTML page (final Content-Type text/html) rather than a real
+  discovery document. No genuine well-known documents are published. Absence is a
+  valid, expected result for a restaurant-facing SaaS with no public API.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  content_type: text/html
+  real_document: false
+  file: null
+- path: /.well-known/openid-configuration
+  status: 200
+  content_type: text/html
+  real_document: false
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  content_type: text/html
+  real_document: false
+  file: null
+- path: /.well-known/api-catalog
+  status: 200
+  content_type: text/html
+  real_document: false
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 200
+  content_type: text/html
+  real_document: false
+  file: null

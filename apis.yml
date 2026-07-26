@@ -1,8 +1,26 @@
 aid: finedine
 name: FineDine
-description: FineDine is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  FineDine is an AI-powered restaurant growth platform that helps restaurants increase revenue
+  through digital menus (QR code, tablet, and web), online and in-venue ordering, reservations,
+  a lite point-of-sale, CRM and loyalty programs, menu-engineering and pricing analytics, and an
+  AI business agent (FineDine IQ). It markets to restaurants and hospitality operators with tiered
+  SaaS pricing (Starter, Growth, Premium). As of this API Evangelist profiling, FineDine publishes
+  no public developer API, SDKs, webhooks, CLI, MCP server, or OpenAPI specification — this profile
+  captures its public commercial and content surface. FineDine is backed by 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/finedine/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.sanity.io/images/vzi1jds2/production/26c5de5d2314079d3ad75348594a6a74845e7cfa-2400x1260.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Restaurants
+- Hospitality
+- Digital Menu
+- Ordering
+- Point of Sale
+- Reservations
+- Food and Beverage
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/finedine-domain-security.yml
+- type: LLMsTxt
+  url: llms/finedine-llms.txt
 - type: Website
   url: https://finedinemenu.com
+- type: Pricing
+  url: https://www.finedinemenu.com/en/pricing/
+- type: SignUp
+  url: https://app.finedinemenu.com/signup
+- type: Login
+  url: https://app.finedinemenu.com/login
+- type: Blog
+  url: https://www.finedinemenu.com/en/blog/
+- type: PrivacyPolicy
+  url: https://www.finedinemenu.com/en/privacy-and-terms/
+- type: TermsOfService
+  url: https://www.finedinemenu.com/en/privacy-and-terms/
+- type: Support
+  url: mailto:info@finedinemenu.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
